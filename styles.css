@@ -1,0 +1,93 @@
+:root {
+    --primaryC: white;
+    --secondaryC: #bb30c8;
+    --font: 'Teko', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondaryC);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: var(--font);
+    font-weight: 400;
+    color: var(--primaryC);
+    background: url(./assets/img/univers.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.container {
+    max-width: 800px;
+    position: relative;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-shadow: 1px black;
+}
+
+.content h2 {
+    margin-bottom: 1rem;
+}
+
+.title {
+font-size: 6rem;
+
+}
+
+.astronaut {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    bottom: -30px;
+    right: -300px;
+}
+
+.astronaut img {
+    width: 100%;
+    height: inherit;
+}
+
+.astronaut-salut {
+    position: absolute;
+    left: -380px;
+    bottom: -30px;
+    width: 350px;
+    height: 350px;
+}
+
+.astronaut-salut img {
+    width: 100%;
+    height: inherit;
+}
+
+.profil-link {
+    padding: 0.6rem 1.5rem;
+    background: #001f84;
+    color: white;
+    border-radius: 10px;
+    border: 2px solid white;
+    transition: 0.2s all ease-in-out;
+}
+
+.profil-link:hover {
+    background: white;
+    color: #001f84;
+    border: 2px solid #001f84;
+
+}
